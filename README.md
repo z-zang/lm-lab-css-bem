@@ -40,7 +40,7 @@ Double hyphen -- signals a modifier.
 
 ------
 
-Heres some example in code:
+Here are some examples in code:
 
 ```
 Block component
@@ -85,9 +85,11 @@ Your page should:
 
 - Use BEM notation to clearly name and structure your CSS to target block, elements and modifiers on the page
 
-* * Hint: avoid duplication in your code. Remember your block styles will affect all cards whereas your modifier styles will change specific, or individual things like the *colour* of your cards.
+* * Hint: avoid duplication in your code. Remember, your "block" styles will affect *all* cards whereas your modifier styles will change *specific*, or *individual* things, like the colour of your cards.
 
 - NOT use Ids (this is because BEM recommends avoiding Ids and only using classes to avoid specificity wars)
+
+- Give classes to EVERYTHING. Try not to select elements using their tag names. On large projects, targettings ```p``` when there are lots of ````ps```` can get dangerous! 🙈
 
 
 ## Extension 🔥
