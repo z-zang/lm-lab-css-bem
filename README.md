@@ -40,7 +40,7 @@ Double hyphen -- signals a modifier.
 
 ------
 
-Heres an example in code:
+Heres some example in code:
 
 ```
 Block component
