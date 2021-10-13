@@ -95,3 +95,5 @@ Your page should:
 - Using flexbox make your cards sit side by side, in the middle of the page
 
 - Add more cards with the same base styles of The Dark and The Force cards but with different colours and images
+
+If you've got this far then the BEM force is with you, Skywalker! 🙏 ✨ 🧘‍♀️
