@@ -68,7 +68,7 @@ Type 'open index.html' in your terminal and press enter (make sure you're in the
 
 You should now see pictures of Darth Vader and Yoda on your screen, yes you will. 
 
-## Your Challenge
+## The Challenge
 
 The internet is being destroyed by unscaleable, unmanageable CSS! Specificity wars are everywhere, elements are lost in the deep dark depths of nesting and fleets of developers are feeing for their lives! But!
 
@@ -76,11 +76,13 @@ Rebellions are built on hope... and a little more knowledge around BEM lights ou
 
 In your index.html file you must work with ~~Yoda~~ BEM to create a more manageable, more zen web page.
 
-### Your page must:
+## The Rulez:
 
 - Have two cards, one light coloured card for Yoda, The Force and BEM. One dark coloured card for Darth Vader and his CSS hell!
 
 - Use BEM notation to clearly name block, elements and modifiers on the page
+
+* * Hint: avoid duplication in your code. Remember your Block styles will affect all cards whereas your modifier styles will change specific, or individual things like the *colour* of your cards.
 
 - NOT use Ids (this is because BEM recommends avoiding Ids and only using classes to avoid specificity wars)
 
