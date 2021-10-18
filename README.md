@@ -10,7 +10,7 @@ BEM stands for Block Element Modifier and has a high adoption rate amongst devel
 
 Lets break it down...
 
-![B-b-break it down!](./break-dance.png)
+![B-b-break it down!](./images/break-dance.png)
 
 ## Block
 
@@ -73,6 +73,8 @@ A CSS "object" is:
 "...a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS, and possibly JavaScript. That object can then be reused throughout a site" - [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki)
 
 With enough small, re-usable snippets, we can use these like lego blocks to build and create something totally new. A CSS object should aim to do *one* thing well. 
+
+![lego-tree](./images/lego-tree.png)
 
 There are two main principles of OOCSS that will help you write CSS that follows a more Object Oriented approach. 
 
