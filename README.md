@@ -4,7 +4,7 @@ A project on how to write scaleable CSS using BEM notation and OOCSS
 
 ## What is BEM? 🧐
 
-BEM notation is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
+BEM notation [Yandex](https://en.bem.info/methodology/) 2009, is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
 
 BEM stands for Block Element Modifier and has a high adoption rate amongst developers due to it's low cost, ease of use - and success!
 
@@ -64,12 +64,15 @@ Here are some examples in code:
 
 # What is OOCSS?
 
-OOCSS (Object Oriented CSS) is a methodology for writing CSS that abstracts away CSS repetition into re-usable "objects". 
+OOCSS (Object Oriented CSS) is a methodology created by [Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2009, for writing CSS that abstracts away CSS repetition into re-usable "objects". 
 
 ## What is a CSS "object"?
 
-A CSS "object" is "...a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS, and possibly JavaScript. That object can then be reused throughout a site" - [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki)
+A CSS "object" is:
 
+"...a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS, and possibly JavaScript. That object can then be reused throughout a site" - [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki)
+
+With enough small, re-usable snippets, we can use these like lego blocks to build and create something totally new. A CSS object should aim to do *one* thing well. 
 
 There are two main principles of OOCSS that will help you write CSS that follows a more Object Oriented approach. 
 
@@ -138,7 +141,7 @@ background: red;
 ```
 
 
-The html:
+The HTML:
 
 ```
   <button class="button">Default</button>
@@ -152,48 +155,108 @@ These buttons "inherit" their main styles from the button class and "extend" wit
 
 ## Separation of Container and Content
 
+Try not to style elements based on their *location*. A re-usable CSS object should look the same wherever you use it. 
+
+For example, rather than styling a specific ```<h2>``` with for example, ```.banner h2 {...}``` create and apply a class that describes the ```<h2>``` in question, like ```<h2 class="banner">```.
+
+This has multiple benefits such as re-usability, consistency across all unclassed ```<h2>s``` and ```<h2>s``` with the ```.banner``` class as well as meaning you won't have to override ```.banner <h2>``` if there is a time it needs to look like a regular ```<h2>```. 
+
+Elements/content dependent on styles based on their location:
+
+```
+#sidebar {
+    padding: 2px;
+    left: 0;
+    margin: 3px;
+    position: absolute;
+    width: 140px;
+}
+
+#sidebar .list {
+    margin: 3px;
+}
+
+#sidebar .list .list-header {
+    font-size: 16px;
+    color: red;
+}
+```
 
 
+Element and content separated:
 
-## BEM in Practice 👩‍🎨
+```
+.sidebar {
+    padding: 2px;
+    left: 0;
+    margin: 3px;
+    position: absolute;
+    width: 140px;
+}
 
-Now you understand what BEM is, it's time to put those sweet new learnings into practice!
+.list {
+    margin: 3px;
+}
+
+.list-header {
+    font-size: 16px;
+    color: red
+}
+```
+
+Unique elements are given unique classes. Avoiding child selectors is a good approach for maintaining separation of content and containers.
+
+## Conclusion
+
+There is no strict, "right" or "wrong" way to architect CSS. However, developers across the globe have found abstracting away repetition into re-usable building blocks (like lego!) and following a clear naming convention helps ease code bloat and ensure separation of concerns. 
+
+Thinking carefully about how we structure code benefits projects as they grow! 🌱 🙌
+
+
+## BEM and OOCSS in Practice 👩‍🎨
+
+Now you understand what BEM and OOCSS are, it's time to put these sweet new learnings into practice!
 
 After forking this repository you will need to then clone the repo locally and open up your index.html file in the browser.
 
-Type 'open index.html' in your terminal and press enter (make sure you're in the right directory!). Your Star Wars / BEM wars page should open in your browser. Alternatively, right click on your index.html file and select 'open with..' then select the browser of your choice.
+Type 'open index.html' in your terminal and press enter (make sure you're in the right directory!). Your Star / BEM / OOCSS wars page should open in your browser. Alternatively, right click on your index.html file and select 'open with..' then select the browser of your choice.
 
 You should now see pictures of Darth Vader and Yoda on your screen. 
 
 ## The Challenge 🤺
 
-The internet is being destroyed by unscaleable, unmanageable CSS! Specificity wars are everywhere, elements are lost in the deep dark depths of nesting and fleets of developers are fleeing in their droves! But!
+The internet is being destroyed by unscaleable, unmanageable CSS! Specificity wars are everywhere, elements are lost in the deep dark depths of nesting and fleets of developers are fleeing in their droves! 
 
-Rebellions are built on hope, Skywalker... and a little more knowledge around BEM lights our way. 🕊
+But! Rebellions are built on hope, Skywalker... and a little more knowledge around CSS methodologies lights our way. 🕊
 
-In your index.html file you must work with ~~Yoda~~ BEM to create a more manageable, more zen web page.
+In your index.html file you must work with ~~Yoda~~ BEM/OOCSS to create a more manageable, more zen web page.
 
 ## The Rulez 😒
 
-Your page should:
+Your page should have:
 
-- Have two cards, one light coloured card for Yoda, The Force and BEM. One dark coloured card for Darth Vader and his CSS hell!
+- One light coloured card for Yoda, The Force and BEM/OOCSS. 
 
-- Have some card styling like borders, padding, shadows etc
+- One dark coloured card for Darth Vader and his CSS hell!
 
-- Use BEM notation to clearly name and structure your CSS to target block, elements and modifiers on the page
+- Card styling like borders, padding, shadows etc
 
-* * Hint: avoid duplication in your code. Remember, your "block" styles will affect *all* cards whereas your modifier styles will change *specific*, or *individual* things, like the colour of your cards.
+- BEM notation to clearly name and structure your CSS to target block, elements and modifiers on the page
 
-- NOT use Ids. This is because BEM recommends avoiding Ids and only using classes to avoid specificity wars (if everything is a class, everything has a specificity of 10 which is easy to remember, and easy to override). 
+- OOCSS to avoid duplication in your code. Remember, "block" styles will affect *all* cards whereas your modifier styles will change *specific*, or *individual* things, like the colour of your cards.
+
+- No Ids. This is because BEM/OOCSS recommend avoiding Ids, instead using classes to avoid specificity wars (if everything is a class, everything has a specificity of 10 which is easy to remember, and easy to override 😉). 
 
 - Try not to select elements using their tag names. On large projects, targettings ```p``` when there are lots of ````ps```` can get dangerous! 🙈 So again, give classes to everything. 
 
+- Comments to clearly separate your CSS content
 
 ## Extension 🔥
 
 - Using flexbox make your cards sit side by side, in the middle of the page
 
-- Add more cards with the same base styles of The Dark Side and The Force cards but with different colours and images
+- Create a button for each card. A red warning/danger button for Darth Vader and an opposing button for Yoda
 
-If you've got this far then the BEM force is with you, Skywalker! 🙏 ✨ 🧘‍♀️
+- Add a couple more cards with the same base styles (and buttons) of The Dark Side and The Force cards but with different colours and images. Get as creative as you like!
+
+If you've got this far then the BEM/OOCSS force is with you, Skywalker! Great job! 🙏 ✨ 🧘‍♀️
