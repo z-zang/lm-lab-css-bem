@@ -4,7 +4,7 @@ A project on how to write scaleable CSS using BEM notation and OOCSS
 
 ## What is BEM? 🧐
 
-BEM notation [Yandex](https://en.bem.info/methodology/) 2009, is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
+BEM notation ([Yandex](https://en.bem.info/methodology/) 2009), is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
 
 BEM stands for Block Element Modifier and has a high adoption rate amongst developers due to it's low cost, ease of use - and success!
 
@@ -62,9 +62,9 @@ Here are some examples in code:
 .button__text--disabled {}
 ```
 
-# What is OOCSS?
+# What is OOCSS? 🧐
 
-OOCSS (Object Oriented CSS) is a methodology created by [Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2009, for writing CSS that abstracts away CSS repetition into re-usable "objects". 
+OOCSS (Object Oriented CSS) is a methodology created by ([Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2009), for writing CSS that abstracts away CSS repetition into re-usable "objects". 
 
 ## What is a CSS "object"?
 
