@@ -4,7 +4,7 @@ A project on how to write scaleable CSS using BEM notation.
 
 ## What is BEM? 🧐
 
-BEM notation is a CSS naming convention designed to keep CSS understandable, scaleable and avoids naming conflicts and specificity wars. Creating "Blocks" keeps code modular and re-usable, reducing the amount of code you have to write. Yay.
+BEM notation is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
 
 BEM stands for Block Element Modifier and has a high adoption rate amongst developers due to it's low cost, ease of use - and success!
 
@@ -27,7 +27,7 @@ For example, some "Elements" would be: button text, header title, list item, con
 
 Each element belongs to it's block parent. A header's title. A list's item etc. 
 
-A double underscore __ means inside the block
+A double underscore __ means *inside* the block
 
 
 ## Modifier
@@ -46,32 +46,33 @@ Here are some examples in code:
 Block component
 .button {}
 
-Element that depends upon the block
+Element that depends upon the block or is *inside* the block
 .button__text {}
+.card__img {}
 
 Modifier that changes the style of the block or element
-.button--red {} 
+.button--disabled {} 
 .button--small {}
 
 Used together they might look something like this:
-.button__text--red
+.button__text--disabled {}
 ```
 
 ## BEM in Practice 👩‍🎨
 
-Now you're down with kids and understand what BEM is, it's time to put those sweet new learnings into practice!
+Now you understand what BEM is, it's time to put those sweet new learnings into practice!
 
 After forking this repository you will need to then clone the repo locally and open up your index.html file in the browser.
 
 Type 'open index.html' in your terminal and press enter (make sure you're in the right directory!). Your Star Wars / BEM wars page should open in your browser. Alternatively, right click on your index.html file and select 'open with..' then select the browser of your choice.
 
-You should now see pictures of Darth Vader and Yoda on your screen, yes you will. 
+You should now see pictures of Darth Vader and Yoda on your screen. 
 
 ## The Challenge 🤺
 
-The internet is being destroyed by unscaleable, unmanageable CSS! Specificity wars are everywhere, elements are lost in the deep dark depths of nesting and fleets of developers are feeing for their lives! But!
+The internet is being destroyed by unscaleable, unmanageable CSS! Specificity wars are everywhere, elements are lost in the deep dark depths of nesting and fleets of developers are fleeing in their droves! But!
 
-Rebellions are built on hope... and a little more knowledge around BEM lights our way.
+Rebellions are built on hope, Skywalker... and a little more knowledge around BEM lights our way. 🕊
 
 In your index.html file you must work with ~~Yoda~~ BEM to create a more manageable, more zen web page.
 
@@ -87,15 +88,15 @@ Your page should:
 
 * * Hint: avoid duplication in your code. Remember, your "block" styles will affect *all* cards whereas your modifier styles will change *specific*, or *individual* things, like the colour of your cards.
 
-- NOT use Ids (this is because BEM recommends avoiding Ids and only using classes to avoid specificity wars)
+- NOT use Ids. This is because BEM recommends avoiding Ids and only using classes to avoid specificity wars (if everything is a class, everything has a specificity of 10 which is easy to remember, and easy to override). 
 
-- Give classes to EVERYTHING. Try not to select elements using their tag names. On large projects, targettings ```p``` when there are lots of ````ps```` can get dangerous! 🙈
+- Try not to select elements using their tag names. On large projects, targettings ```p``` when there are lots of ````ps```` can get dangerous! 🙈 So again, give classes to everything. 
 
 
 ## Extension 🔥
 
 - Using flexbox make your cards sit side by side, in the middle of the page
 
-- Add more cards with the same base styles of The Dark and The Force cards but with different colours and images
+- Add more cards with the same base styles of The Dark Side and The Force cards but with different colours and images
 
 If you've got this far then the BEM force is with you, Skywalker! 🙏 ✨ 🧘‍♀️
