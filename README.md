@@ -44,17 +44,21 @@ Here are some examples in code:
 
 ```
 Block component
+
 .button {}
 
 Element that depends upon the block or is *inside* the block
+
 .button__text {}
 .card__img {}
 
 Modifier that changes the style of the block or element
+
 .button--disabled {} 
 .button--small {}
 
 Used together they might look something like this:
+
 .button__text--disabled {}
 ```
 
