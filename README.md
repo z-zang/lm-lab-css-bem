@@ -4,7 +4,7 @@ A project on how to write scaleable CSS using BEM notation and OOCSS
 
 # What is OOCSS? 🧐
 
-OOCSS (Object Oriented CSS) is a methodology created by ([Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2009), for writing CSS that abstracts away CSS repetition into re-usable "objects". 
+OOCSS (Object Oriented CSS) is a methodology created by ([Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2009), for writing CSS that abstracts away CSS repetition into reusable "objects". 
 
 ## What is a CSS "object"?
 
@@ -153,6 +153,8 @@ Unique elements are given unique classes. Avoiding child selectors is a good app
 BEM notation ([Yandex](https://en.bem.info/methodology/) 2009), is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
 
 BEM stands for Block Element Modifier and has a high adoption rate amongst developers due to it's low cost, ease of use - and success!
+
+OOCSS and BEM are two separate methodologies, but essentially OOCSS defines good architecture and BEM makes those principles less confusing.
 
 Lets break it down...
 
