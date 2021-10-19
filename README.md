@@ -154,7 +154,7 @@ BEM notation ([Yandex](https://en.bem.info/methodology/) 2009), is a CSS naming 
 
 BEM stands for Block Element Modifier and has a high adoption rate amongst developers due to it's low cost, ease of use - and success!
 
-OOCSS and BEM are two separate methodologies, but essentially OOCSS defines good architecture and BEM makes those principles less confusing.
+OOCSS and BEM are two separate methodologies, but essentially OOCSS defines good architecture and BEM gives those concepts a recognizable, easy to understand terminology.
 
 Lets break it down...
 
