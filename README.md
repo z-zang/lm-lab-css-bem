@@ -2,66 +2,6 @@
 
 A project on how to write scaleable CSS using BEM notation and OOCSS
 
-## What is BEM? 🧐
-
-BEM notation ([Yandex](https://en.bem.info/methodology/) 2009), is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
-
-BEM stands for Block Element Modifier and has a high adoption rate amongst developers due to it's low cost, ease of use - and success!
-
-Lets break it down...
-
-![B-b-break it down!](./images/break-dance.png)
-
-## Block
-
-A "Block" is a standalone entity that is meaningful on it's own.
-
-Some "Block" examples might be: buttons, headers, containers, cards, list and input 
-
-
-## Element 
-
-An "Element" is part of a block. An element has no meaning on it's own.
-
-For example, some "Elements" would be: button text, header title, list item, container card. 
-
-Each element belongs to it's block parent. A header's title. A list's item etc. 
-
-A double underscore __ means *inside* the block
-
-
-## Modifier
-
-A "Modifier" changes - or modifies 😉 - a block or elements appearance or behaviour.
-
-For example, some "Modifiers" might be: disabled, on/off, size small, color red etc
-
-Double hyphen -- signals a modifier.
-
-------
-
-Here are some examples in code:
-
-```
-/* Block component */
-
-.button {}
-
-/* Element that depends upon the block or is *inside* the block */
-
-.button__text {}
-.card__img {}
-
-/* Modifier that changes the style of the block or element */
-
-.button--disabled {} 
-.button--small {}
-
-/* Used together they might look something like this: */
-
-.button__text--disabled {}
-```
-
 # What is OOCSS? 🧐
 
 OOCSS (Object Oriented CSS) is a methodology created by ([Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2009), for writing CSS that abstracts away CSS repetition into re-usable "objects". 
@@ -207,6 +147,66 @@ Element and content separated:
 ```
 
 Unique elements are given unique classes. Avoiding child selectors is a good approach for maintaining separation of content and containers.
+
+## What is BEM? 🧐
+
+BEM notation ([Yandex](https://en.bem.info/methodology/) 2009), is a CSS naming convention designed to keep CSS understandable and scaleable by avoiding naming conflicts and specificity wars. Creating CSS "Blocks" keeps code modular and re-usable, reducing the amount of code we have to write. Yay.
+
+BEM stands for Block Element Modifier and has a high adoption rate amongst developers due to it's low cost, ease of use - and success!
+
+Lets break it down...
+
+![B-b-break it down!](./images/break-dance.png)
+
+## Block
+
+A "Block" is a standalone entity that is meaningful on it's own.
+
+Some "Block" examples might be: buttons, headers, containers, cards, list and input 
+
+
+## Element 
+
+An "Element" is part of a block. An element has no meaning on it's own.
+
+For example, some "Elements" would be: button text, header title, list item, container card. 
+
+Each element belongs to it's block parent. A header's title. A list's item etc. 
+
+A double underscore __ means *inside* the block
+
+
+## Modifier
+
+A "Modifier" changes - or modifies 😉 - a block or elements appearance or behaviour.
+
+For example, some "Modifiers" might be: disabled, on/off, size small, color red etc
+
+Double hyphen -- signals a modifier.
+
+------
+
+Here are some examples in code:
+
+```
+/* Block component */
+
+.button {}
+
+/* Element that depends upon the block or is *inside* the block */
+
+.button__text {}
+.card__img {}
+
+/* Modifier that changes the style of the block or element */
+
+.button--disabled {} 
+.button--small {}
+
+/* Used together they might look something like this: */
+
+.button__text--disabled {}
+```
 
 ## Conclusion
 
