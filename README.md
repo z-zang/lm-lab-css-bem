@@ -4,7 +4,7 @@ A project on how to write scaleable CSS using BEM notation and OOCSS
 
 # What is OOCSS? 🧐
 
-OOCSS (Object Oriented CSS) is a methodology created by ([Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2009), for writing CSS that abstracts away CSS repetition into reusable "objects". 
+OOCSS (Object Oriented CSS) is a methodology created by ([Nicole Sullivan](https://github.com/stubbornella/oocss/wiki) 2008), for writing CSS that abstracts away CSS repetition into reusable "objects". 
 
 ## What is a CSS "object"?
 
