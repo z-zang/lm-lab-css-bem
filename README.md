@@ -29,7 +29,16 @@ For example, if we had three buttons that all looked the same apart from their c
 Before OOCSS your code might look like this:
 
 ```
-button--default {
+.button {
+  width: 7rem;
+  padding: 5px; 
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  background: white;
+}
+
+.button1 {
   width: 7rem;
   padding: 5px; 
   border-radius: 4px;
@@ -38,16 +47,7 @@ button--default {
   background: green;
 }
 
-button--success {
-  width: 7rem;
-  padding: 5px; 
-  border-radius: 4px;
-  text-align: center;
-  font-size: 1rem;
-  background: green;
-}
-
-button--warning {
+.button2 {
   width: 7rem;
   padding: 5px; 
   border-radius: 4px;
