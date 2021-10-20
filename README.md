@@ -237,7 +237,7 @@ In your index.html file you must work with ~~Yoda~~ BEM/OOCSS to create a more m
 
 ## The Rulez 😒
 
-Your page should have:
+Your project should have:
 
 - One light coloured card for Yoda, The Force and BEM/OOCSS. 
 
@@ -249,11 +249,11 @@ Your page should have:
 
 - OOCSS to avoid duplication in your code. Remember, "block" styles will affect *all* cards whereas your modifier styles will change *specific*, or *individual* things, like the colour of your cards.
 
-- No Ids. This is because BEM/OOCSS recommend avoiding Ids, instead using classes to avoid specificity wars (if everything is a class, everything has a specificity of 10 which is easy to remember, and easy to override 😉). 
+- No or limited Ids. This is because BEM/OOCSS recommend avoiding or at least being very careful with using Ids. Using mostly classes avoids specificity wars (if everything is a class, everything has a specificity of 10 which is easy to remember, and easy to override 😉). 
 
 - Try not to select elements using their tag names. On large projects, targettings ```p``` when there are lots of ````ps```` can get dangerous! 🙈 So again, give classes to everything. 
 
-- Comments to clearly separate your CSS content
+- Comments to clearly separate your CSS content i.e. structure vs skins
 
 ## Extension 🔥
 
