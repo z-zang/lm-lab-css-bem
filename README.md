@@ -191,23 +191,38 @@ Double hyphen -- signals a modifier.
 Here are some examples in code:
 
 ```
-/* Block component */
+/* Block level components: */
 
 .button {}
+.card {}
+.modal {}
+.content {}
+.menu {}
 
-/* Element that depends upon the block or is *inside* the block */
+/* Element that depends upon the block or live inside the block: */
 
 .button__text {}
 .card__img {}
+.modal__title {}
+.content__article {}
+.menu__item {}
+.search__input {}
 
-/* Modifier that changes the style of the block or element */
+/* Modifier that changes the style of the block or element: */
 
 .button--disabled {}
 .button--small {}
+.card--hidden {}
+.modal--open {}
 
 /* Used together they might look something like this: */
 
 .button__text--disabled {}
+.card__img--hidden {}
+.content__article--featured {}
+.menu__item--link {}
+.search__input--icon {}
+
 ```
 
 
@@ -217,57 +232,4 @@ There is no strict, "right" or "wrong" way to architect CSS. However, developers
 
 Thinking carefully about how we structure code benefits projects as they grow! 🌱 🙌
 
-
-## BEM and OOCSS in Practice 👩‍🎨
-
-Now you understand what BEM and OOCSS are, it's time to put these sweet new learnings into practice!
-
-After forking this repository you will need to clone the repo locally and open up your index.html file in the browser.
-
-Type 'open index.html' in your terminal and press enter (make sure you're in the right directory!). Your Star / BEM / OOCSS Wars page should open in your browser. Alternatively, right click on your index.html file and select 'open with..' then select the browser of your choice.
-
-You should now see pictures of Darth Vader and Yoda on your screen. 🪐
-
-
-## The Challenge 🤺
-
-The internet is being destroyed by unscalable, unmanageable CSS! Specificity wars are everywhere, elements are lost in the deep dark depths of nesting and fleets of developers are fleeing in their droves!
-
-But! Rebellions are built on hope, Skywalker... and a little more knowledge around CSS methodologies lights our way. 🕊
-
-In your index.html file you must work with ~~Yoda~~ BEM/OOCSS to create a more manageable, more zen web page.
-
-
-## The Rulez 😒
-
-Your project should have:
-
-- One bright coloured card for Yoda, The Force and BEM/OOCSS.
-
-- One dark coloured card for Darth Vader and his CSS hell!
-
-- Card styling like borders, padding, shadows etc
-
-- BEM notation to clearly name and structure your CSS to target block, elements and modifiers on the page
-
-- OOCSS to avoid duplication in your code. Remember, "block" styles will affect *all* cards whereas your modifier styles will change *specific*, or *individual* things, like the colour of your cards.
-
-- No Ids. This is because BEM/OOCSS recommend avoiding Ids because Ids are unique which means they cannot be reused. Using classes avoids specificity wars (if everything is a class, everything has a specificity of 10 which is easy to remember and easy to override 😉).
-
-- Try not to select elements using their tag names. On large projects, targetting ```p``` when there are lots of ````ps```` can get dangerous! 🙈 So again, give classes to everything.
-
-- Comments to clearly separate your CSS content i.e. structure vs skins
-
-
-## Extension 🔥
-
-- Using flexbox make your cards sit side by side, in the middle of the page
-
-- Create a button for each card. A red warning/danger button for Darth Vader and an opposing button for Yoda
-
-- Add a couple more cards with the same base styles (and buttons) of The Dark Side and The Force cards but with different colours and images. Get as creative as you like!
-
-- Have a go at applying [SASS](https://sass-lang.com/) to your project
-
-
-If you've got this far then the BEM/OOCSS force is with you, Skywalker! Great job! 🙏 ✨ 🧘‍♀️
+See [activity-1](./activities/activity-1.md) to get started!
