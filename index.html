@@ -10,24 +10,26 @@
 </head>
 
 <body>
-    <h1>BEM Wars</h1>
+    <h1 class="title">BEM Wars</h1>
     <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+        <div class="card card--darkTheme">
+            <h2 class="card__title">The Dark Side</h2>
+            <img class="card__img" src="./images/vader.jpeg">
+            <p class="card__text">Nesting!</p>
+            <p class="card__text">Conflict!</p>
+            <p class="card__text">Specificity Wars!</p>
+            <p class="card__text">Cookies</p>
+            <button class="card__button card__button--darkTheme">Join the Dark Side...</button>
         </div>
 
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+        <div class="card card--forceTheme">
+            <h2 class="card__title">The Force</h2>
+            <img class="card__img" src="./images/yoda.jpeg">
+            <p class="card__text">Love</p>
+            <p class="card__text">Beauty</p>
+            <p class="card__text">CSS that Scales!</p>
+            <p class="card__text">Great warrior. Wars not make one great!</p>
+            <button class="card__button card__button--forceTheme">Join the Force...</button>
         </div>
     </div>
 </body>
